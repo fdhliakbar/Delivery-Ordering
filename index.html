@@ -268,18 +268,32 @@
           class="map"
         ></iframe>
 
-        <form action="">
+        <!-- form validation -->
+        <form id="form" action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="name" />
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="name"
+            />
+            <div class="error"></div>
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
+            <input id="email" name="email" type="text" placeholder="email" />
+            <div class="error"></div>
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="phone number" />
+            <input
+              id="phone-number"
+              name="phone-number"
+              type="text"
+              placeholder="phone number"
+            />
+            <div class="error"></div>
           </div>
           <button type="submit" class="btn">Send Message</button>
         </form>
